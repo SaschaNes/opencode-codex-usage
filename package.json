@@ -1,0 +1,30 @@
+{
+  "name": "opencode-codex-usage-local",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "files": ["src/"],
+  "exports": {
+    ".": "./src/index.ts",
+    "./tui": "./src/tui.tsx"
+  },
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.mjs",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@opencode/plugin": "2.0.16"
+  },
+  "peerDependencies": {
+    "@opentui/core": ">=0.5.8",
+    "@opentui/solid": ">=0.5.8",
+    "solid-js": ">=1.9.0"
+  },
+  "devDependencies": {
+    "@opentui/core": "0.5.12",
+    "@opentui/solid": "0.5.12",
+    "solid-js": "1.9.12",
+    "tsx": "4.20.6",
+    "typescript": "~5.9.3"
+  }
+}
